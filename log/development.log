@@ -375,3 +375,653 @@ Processing by ArtistsController#show as HTML
   Parameters: {"id"=>"2"}
   Rendered artists/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started GET "/" for ::1 at 2020-06-19 11:58:41 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists" for ::1 at 2020-06-19 11:58:48 -0600
+Processing by ArtistsController#index as HTML
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (ArtistsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.7.1) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.7.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.7.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.7.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.7.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.7.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.7.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.7.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:727:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.7.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.8) lib/rack/handler/webrick.rb:86:in `service'
+/Users/oshagroetz/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/oshagroetz/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/oshagroetz/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.6ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_oshagroetz__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1943287722224074338_70342014215460 at /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.2ms)
+Started GET "/artists/new" for ::1 at 2020-06-19 11:59:03 -0600
+Processing by ArtistsController#new as HTML
+  Rendering artists/new.html.erb within layouts/application
+  Rendered artists/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 197ms (Views: 181.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/artists" for ::1 at 2020-06-19 11:59:08 -0600
+Processing by ArtistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FcdPXIqroDF19HVXy2jqpxJBg3lHWyIOT6UE929HGuxYQspAtEWWBwQRun67A7N5dwSR6BHC8JNOVFks7l/Xjw==", "artist"=>{"name"=>"Tori Amos"}, "commit"=>"Create Artist"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tori Amos"], ["created_at", "2020-06-19 17:59:08.109369"], ["updated_at", "2020-06-19 17:59:08.109369"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/artists/3
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/artists/3" for ::1 at 2020-06-19 11:59:08 -0600
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/new" for ::1 at 2020-06-19 11:59:21 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 18ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/songs" for ::1 at 2020-06-19 11:59:38 -0600
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H7nREsmvOHOzIhtYqqgBjz+g4seb0CotR6l8hCTyIGxSPFQO90EORcLH1HHaw1hRWuXwVs1J+LBGWCFfpertDw==", "song"=>{"title"=>"Little Earthquakes", "artist_name"=>"Tori Amos"}, "commit"=>"Create Song"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Tori Amos"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Little Earthquakes"], ["created_at", "2020-06-19 17:59:38.656077"], ["updated_at", "2020-06-19 17:59:38.656077"], ["artist_id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/3
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-19 11:59:38 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-19 12:00:00 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-19 12:00:01 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-19 12:00:26 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists" for ::1 at 2020-06-19 12:00:35 -0600
+Processing by ArtistsController#index as HTML
+Completed 406 Not Acceptable in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (ArtistsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.7.1) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.7.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.7.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.7.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.7.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.7.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.7.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.7.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:727:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.7.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.8) lib/rack/handler/webrick.rb:86:in `service'
+/Users/oshagroetz/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/oshagroetz/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/oshagroetz/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_oshagroetz__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1943287722224074338_70342041378000 at /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (22.1ms)
+Started GET "/songs" for ::1 at 2020-06-19 12:00:38 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/new" for ::1 at 2020-06-19 12:00:40 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:00:45 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:01:16 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:01:22 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:01:30 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:01:32 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-19 12:01:34 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-19 12:03:31 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `display_artist' for #<Song:0x00007ff390d1bb50>):
+    1: <ul>
+    2: <% @songs.each do |song| %>
+    3:   <li><%= link_to song.title, song_path(song) %>
+    4:   <%= song.display_artist %></li>
+    5: <% end %>
+    6: </ul>
+    7: <br>
+  
+app/views/songs/index.html.erb:4:in `block in _app_views_songs_index_html_erb___194636771231395679_70341995552360'
+app/views/songs/index.html.erb:2:in `_app_views_songs_index_html_erb___194636771231395679_70341995552360'
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.3ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_oshagroetz__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1943287722224074338_70342000721560 at /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.8ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendering /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/oshagroetz/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.4ms)
+Started GET "/songs" for ::1 at 2020-06-19 12:06:33 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/2" for ::1 at 2020-06-19 12:06:36 -0600
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists/2" for ::1 at 2020-06-19 12:06:58 -0600
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-06-19 12:07:09 -0600
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/new" for ::1 at 2020-06-19 12:07:20 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/songs" for ::1 at 2020-06-19 12:07:32 -0600
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ae0D9XMh8zmZ5LPSv4BqbUP0sWy0urC86w2Pu++JDvIkaIbpTc/FD+gBfPvP6zOzJrGj/eIjYiHq/NJgbpHDkQ==", "song"=>{"title"=>"Song Test No Artist", "artist_name"=>""}, "commit"=>"Create Song"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2020-06-19 18:07:32.062164"], ["updated_at", "2020-06-19 18:07:32.062164"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Song Test No Artist"], ["created_at", "2020-06-19 18:07:32.064614"], ["updated_at", "2020-06-19 18:07:32.064614"], ["artist_id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/4
+Completed 302 Found in 7ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-19 12:07:32 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-19 12:07:34 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-19 12:07:37 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-19 12:08:18 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-19 12:08:20 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/4/edit" for ::1 at 2020-06-19 12:08:44 -0600
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/songs/4" for ::1 at 2020-06-19 12:08:51 -0600
+Processing by SongsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4WLB6Kf/A36eC5b2wqAOcpUrKcvj/oLp8DeVxehsWtus50T0mRE1SO/uWd+yy1es8G47WrVnUHTxxsgeaXSXuA==", "song"=>{"title"=>"Song Test When No Artist", "artist_name"=>""}, "commit"=>"Update Song", "id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "songs" SET "title" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["title", "Song Test When No Artist"], ["updated_at", "2020-06-19 18:08:51.035876"], ["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/4
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-19 12:08:51 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-19 12:08:52 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-19 12:08:56 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-19 12:11:37 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:11:40 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists/2" for ::1 at 2020-06-19 12:11:44 -0600
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:11:53 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:12:10 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-19 12:12:18 -0600
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-19 12:12:29 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.8ms)
+
+
