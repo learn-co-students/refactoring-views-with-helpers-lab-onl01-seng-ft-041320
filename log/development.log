@@ -375,3 +375,1567 @@ Processing by ArtistsController#show as HTML
   Parameters: {"id"=>"2"}
   Rendered artists/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Started GET "/artists/" for ::1 at 2020-06-22 13:03:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtistsController#index as HTML
+Completed 406 Not Acceptable in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (ArtistsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.7.1) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.7.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.7.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.7.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.7.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.7.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.7.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.7.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:727:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.7.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.8) lib/rack/handler/webrick.rb:86:in `service'
+/Users/markcascardi/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/markcascardi/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/markcascardi/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322966478480 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.3ms)
+Started GET "/artists/1" for ::1 at 2020-06-22 13:03:27 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 254ms (Views: 252.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-06-22 13:03:57 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%= @artist.name %>
+  
+app/views/artists/show.html.erb:1:in `_app_views_artists_show_html_erb__4580606352488791476_70323003351220'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.3ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322974845620 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.1ms)
+Started GET "/artists/1" for ::1 at 2020-06-22 13:04:13 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 8.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-06-22 13:05:35 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/markcascardi/Development/code/rails-week-two/refactoring-views-with-helpers-lab-onl01-seng-ft-041320/app/views/artists/show.html.erb:11: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/artists/show.html.erb:11: syntax error, unexpected end-of-input, expecting end
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322974700180 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.9ms)
+Started GET "/artists/1" for ::1 at 2020-06-22 13:05:45 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:05:48 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:05:50 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:05:50 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:09:06 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/markcascardi/Development/code/rails-week-two/refactoring-views-with-helpers-lab-onl01-seng-ft-041320/app/views/songs/show.html.erb:11: syntax error, unexpected ensure, expecting end
+          ensure
+          ^~~~~~
+/Users/markcascardi/Development/code/rails-week-two/refactoring-views-with-helpers-lab-onl01-seng-ft-041320/app/views/songs/show.html.erb:13: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/songs/show.html.erb:11: syntax error, unexpected ensure, expecting end
+app/views/songs/show.html.erb:13: syntax error, unexpected end-of-input, expecting end
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70323014628660 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.0ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.8ms)
+Started GET "/songs/1" for ::1 at 2020-06-22 13:09:27 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/markcascardi/Development/code/rails-week-two/refactoring-views-with-helpers-lab-onl01-seng-ft-041320/app/views/songs/show.html.erb:11: syntax error, unexpected ensure, expecting end
+          ensure
+          ^~~~~~
+/Users/markcascardi/Development/code/rails-week-two/refactoring-views-with-helpers-lab-onl01-seng-ft-041320/app/views/songs/show.html.erb:13: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/songs/show.html.erb:11: syntax error, unexpected ensure, expecting end
+app/views/songs/show.html.erb:13: syntax error, unexpected end-of-input, expecting end
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70323015839880 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (51.2ms)
+Started GET "/songs/" for ::1 at 2020-06-22 13:09:46 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:09:53 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (44.4ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/markcascardi/Development/code/rails-week-two/refactoring-views-with-helpers-lab-onl01-seng-ft-041320/app/views/songs/show.html.erb:11: syntax error, unexpected ensure, expecting end
+          ensure
+          ^~~~~~
+/Users/markcascardi/Development/code/rails-week-two/refactoring-views-with-helpers-lab-onl01-seng-ft-041320/app/views/songs/show.html.erb:13: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/songs/show.html.erb:11: syntax error, unexpected ensure, expecting end
+app/views/songs/show.html.erb:13: syntax error, unexpected end-of-input, expecting end
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70323015171300 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (51.8ms)
+Started GET "/songs/1" for ::1 at 2020-06-22 13:10:16 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:10:34 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:10:37 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-06-22 13:10:40 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:11:15 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/new" for ::1 at 2020-06-22 13:11:16 -0400
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/songs" for ::1 at 2020-06-22 13:11:19 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VBipvZfcphhBbUzzc4Ftv22sDlITHJTsE1SKKkJy2fRzZIBtYfNAaJpCenH9Vqm7C8Si27K8qKqaKVUXtaMbzQ==", "song"=>{"title"=>"Hello", "artist_name"=>""}, "commit"=>"Create Song"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Hello"], ["created_at", "2020-06-22 17:11:19.724480"], ["updated_at", "2020-06-22 17:11:19.724480"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/3
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:11:19 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (28.2ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `songs_edit_path' for #<#<Class:0x00007feab4a3f948>:0x00007feab583c320>
+Did you mean?  songs_path):
+    3: <% if @song.artist %>
+    4:   <%= link_to @song.artist.name, @song.artist %>
+    5: <% else %>
+    6:   <%= link_to "Edit Song", songs_edit_path(@song) %>
+    7: <% end %>
+    8: 
+    9: <p>
+  
+app/views/songs/show.html.erb:6:in `_app_views_songs_show_html_erb___3359906524555255287_70323022194100'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.9ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70323014329900 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (53.9ms)
+Started GET "/songs/3" for ::1 at 2020-06-22 13:11:25 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (25.4ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `song_edit_path' for #<#<Class:0x00007feab4a3f948>:0x00007feab364eda8>
+Did you mean?  song_path):
+    3: <% if @song.artist %>
+    4:   <%= link_to @song.artist.name, @song.artist %>
+    5: <% else %>
+    6:   <%= link_to "Edit Song", song_edit_path(@song) %>
+    7: <% end %>
+    8: 
+    9: <p>
+  
+app/views/songs/show.html.erb:6:in `_app_views_songs_show_html_erb___3359906524555255287_70323004406520'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322982775480 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.1ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.9ms)
+Started GET "/songs/3" for ::1 at 2020-06-22 13:11:49 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/3/edit" for ::1 at 2020-06-22 13:11:54 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  Rendered songs/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/songs/3" for ::1 at 2020-06-22 13:11:56 -0400
+Processing by SongsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TPnImb7pp+K0ND5fTNg0JWSLC64KYTHlm9gYty0pkCFrheFJSMZBkm8bCN3CD/AhAuOnJ6vBDaMSpceK2vhSGA==", "song"=>{"title"=>"Hello", "artist_name"=>"Adele"}, "commit"=>"Update Song", "id"=>"3"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/3
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:11:56 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:11:58 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:12:00 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:12:08 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-22 13:12:13 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 17ms (Views: 12.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:12:18 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:12:19 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:12:21 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:12:24 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-22 13:12:25 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:12:27 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:12:28 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:14:58 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 29ms (Views: 13.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:15:01 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/2" for ::1 at 2020-06-22 13:15:03 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:15:03 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:15:04 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:17:52 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 44ms (Views: 35.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:17:55 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/new" for ::1 at 2020-06-22 13:17:56 -0400
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/songs" for ::1 at 2020-06-22 13:18:23 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NC3GzflNFhds8fPSTOm72i8YDDBsugVEr8uYdwbudkETUe8dD2LwZ7fexVDCPn/eSXCguc0aOQImtkdK8T+0eA==", "song"=>{"title"=>"Daughter", "artist_name"=>""}, "commit"=>"Create Song"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2020-06-22 17:18:23.744083"], ["updated_at", "2020-06-22 17:18:23.744083"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Daughter"], ["created_at", "2020-06-22 17:18:23.749107"], ["updated_at", "2020-06-22 17:18:23.749107"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/4
+Completed 302 Found in 21ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:18:23 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/4/edit" for ::1 at 2020-06-22 13:18:25 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  Rendered songs/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/songs/4" for ::1 at 2020-06-22 13:18:34 -0400
+Processing by SongsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EwBmMXV7+4Y00umYa0DwFke/8BPqycnCFdXMbUSvqN80fE/hg1Qd9u/93xrllzQSIddcmktp9YScqBNQs35q5g==", "song"=>{"title"=>"Daughter", "artist_name"=>"Pearl Jam"}, "commit"=>"Update Song", "id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Pearl Jam"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Pearl Jam"], ["created_at", "2020-06-22 17:18:34.813182"], ["updated_at", "2020-06-22 17:18:34.813182"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/4
+Completed 302 Found in 18ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:18:34 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:18:37 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:18:40 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:18:41 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:18:42 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:18:43 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:25:10 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 23ms (Views: 17.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:25:13 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:25:17 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:25:19 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:27:05 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:27:08 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:27:09 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for nil:NilClass):
+    1: <ul>
+    2: <% @songs.each do |song| %>
+    3:   <li>
+    4:     <  <%= display_artist @ong %>
+    5:   </li>
+    6:   <% end %>
+    7: </ul>
+  
+app/helpers/artists_helper.rb:4:in `display_artist'
+app/views/songs/index.html.erb:4:in `block in _app_views_songs_index_html_erb___1828199748238596411_70323015482960'
+app/views/songs/index.html.erb:2:in `_app_views_songs_index_html_erb___1828199748238596411_70323015482960'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322984056660 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.9ms)
+Started GET "/songs" for ::1 at 2020-06-22 13:27:19 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for nil:NilClass):
+    1: <ul>
+    2: <% @songs.each do |song| %>
+    3:   <li>
+    4:     <  <%= display_artist @ong %>
+    5:   </li>
+    6:   <% end %>
+    7: </ul>
+  
+app/helpers/artists_helper.rb:4:in `display_artist'
+app/views/songs/index.html.erb:4:in `block in _app_views_songs_index_html_erb___1828199748238596411_70323014022360'
+app/views/songs/index.html.erb:2:in `_app_views_songs_index_html_erb___1828199748238596411_70323014022360'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.8ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322973059360 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.8ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.2ms)
+Started GET "/songs" for ::1 at 2020-06-22 13:27:20 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for nil:NilClass):
+    1: <ul>
+    2: <% @songs.each do |song| %>
+    3:   <li>
+    4:     <  <%= display_artist @ong %>
+    5:   </li>
+    6:   <% end %>
+    7: </ul>
+  
+app/helpers/artists_helper.rb:4:in `display_artist'
+app/views/songs/index.html.erb:4:in `block in _app_views_songs_index_html_erb___1828199748238596411_70322982547180'
+app/views/songs/index.html.erb:2:in `_app_views_songs_index_html_erb___1828199748238596411_70322982547180'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.7ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70323004838720 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.1ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.1ms)
+Started GET "/songs" for ::1 at 2020-06-22 13:27:26 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for nil:NilClass):
+    1: <ul>
+    2: <% @songs.each do |song| %>
+    3:   <li>
+    4:     <  <%= display_artist @ong %>
+    5:   </li>
+    6:   <% end %>
+    7: </ul>
+  
+app/helpers/artists_helper.rb:4:in `display_artist'
+app/views/songs/index.html.erb:4:in `block in _app_views_songs_index_html_erb___1828199748238596411_70323015497680'
+app/views/songs/index.html.erb:2:in `_app_views_songs_index_html_erb___1828199748238596411_70323015497680'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322974619080 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.7ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.5ms)
+Started GET "/songs/4/edit" for ::1 at 2020-06-22 13:27:28 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  Rendered songs/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:27:30 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/4/edit" for ::1 at 2020-06-22 13:27:32 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  Rendered songs/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/songs/4" for ::1 at 2020-06-22 13:27:40 -0400
+Processing by SongsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1GhA2itcWfv9vvQ6gHKompdEf0N40laz81lgucdKuG7zFGkK3XO/iyaRwrgOpWye8SzTytlyavV6JL+EMJt6Vw==", "song"=>{"title"=>"Daughter", "artist_name"=>"Pearl Jam"}, "commit"=>"Update Song", "id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Pearl Jam"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/4
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:27:40 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:27:42 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for nil:NilClass):
+    1: <ul>
+    2: <% @songs.each do |song| %>
+    3:   <li>
+    4:     <  <%= display_artist @ong %>
+    5:   </li>
+    6:   <% end %>
+    7: </ul>
+  
+app/helpers/artists_helper.rb:4:in `display_artist'
+app/views/songs/index.html.erb:4:in `block in _app_views_songs_index_html_erb___1828199748238596411_70323014923360'
+app/views/songs/index.html.erb:2:in `_app_views_songs_index_html_erb___1828199748238596411_70323014923360'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322983810820 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.8ms)
+Started GET "/songs" for ::1 at 2020-06-22 13:28:50 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for nil:NilClass):
+    1: <ul>
+    2: <% @songs.each do |song| %>
+    3:   <li>
+    4:     <  <%= display_artist @ong %>
+    5:   </li>
+    6:   <% end %>
+    7: </ul>
+  
+app/helpers/artists_helper.rb:4:in `display_artist'
+app/views/songs/index.html.erb:4:in `block in _app_views_songs_index_html_erb___1828199748238596411_70322984055580'
+app/views/songs/index.html.erb:2:in `_app_views_songs_index_html_erb___1828199748238596411_70322984055580'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (22.6ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.3ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70322981734520 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.1ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (60.5ms)
+Started GET "/songs" for ::1 at 2020-06-22 13:29:30 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for nil:NilClass):
+    1: <ul>
+    2: <% @songs.each do |song| %>
+    3:   <li>
+    4:     <  <%= display_artist @ong %>
+    5:   </li>
+    6:   <% end %>
+    7: </ul>
+  
+app/helpers/artists_helper.rb:4:in `display_artist'
+app/views/songs/index.html.erb:4:in `block in _app_views_songs_index_html_erb___1828199748238596411_70323003303820'
+app/views/songs/index.html.erb:2:in `_app_views_songs_index_html_erb___1828199748238596411_70323003303820'
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_markcascardi__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__1771666049586524324_70323015925580 at /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.0ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/markcascardi/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.4ms)
+Started GET "/songs" for ::1 at 2020-06-22 13:37:57 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 41ms (Views: 33.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:39:06 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:39:38 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:40:04 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:40:15 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:40:38 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:40:51 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs/1" for ::1 at 2020-06-22 13:40:57 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-06-22 13:40:58 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered artists/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:41:02 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/3/edit" for ::1 at 2020-06-22 13:41:53 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  Rendered songs/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/songs/3" for ::1 at 2020-06-22 13:43:37 -0400
+Processing by SongsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XFxWGA4C4hmo9MSCRxzJ9dvbvbywEsD6aIbOH9PonX+DViIlhft+L2M5ZCHy7cjsQfCf1Ngd0Vg38QFiJ5gTA==", "song"=>{"title"=>"Hello", "artist_name"=>"Adele"}, "commit"=>"Update Song", "id"=>"3"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Adele"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Adele"], ["created_at", "2020-06-22 17:43:38.031400"], ["updated_at", "2020-06-22 17:43:38.031400"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["artist_id", 5], ["updated_at", "2020-06-22 17:43:38.034596"], ["id", 3]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/3
+Completed 302 Found in 26ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/songs/3" for ::1 at 2020-06-22 13:43:38 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (1.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:44:07 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs/4/edit" for ::1 at 2020-06-22 13:44:10 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  Rendered songs/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/songs/4" for ::1 at 2020-06-22 13:44:13 -0400
+Processing by SongsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1pkgO40McJxI6/4aja1ylJavpnez4lDZJhLLz0lcn17x5QnreyOW7JPEyJgDeraQ8McK/hJCbJ+vbxTyvo1dZw==", "song"=>{"title"=>"Daughter", "artist_name"=>"Pearl Jam"}, "commit"=>"Update Song", "id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "Pearl Jam"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["artist_id", 4], ["updated_at", "2020-06-22 17:44:13.825795"], ["id", 4]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/4
+Completed 302 Found in 12ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/songs/4" for ::1 at 2020-06-22 13:44:13 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:44:15 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 19ms (Views: 15.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs/new" for ::1 at 2020-06-22 13:44:16 -0400
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/songs" for ::1 at 2020-06-22 13:44:40 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AQUhi7M4sxOZ8ACnD2iGF0QnPi5kBmdzsx6sKtMj1McmeQhbRRdVY0LfNiWBv0ITIk+Sp8WmWzU6Y3MXJPIW/g==", "song"=>{"title"=>"Please Pardon Yourself", "artist_name"=>""}, "commit"=>"Create Song"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Please Pardon Yourself"], ["created_at", "2020-06-22 17:44:40.555096"], ["updated_at", "2020-06-22 17:44:40.555096"], ["artist_id", 3]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/5
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/songs/5" for ::1 at 2020-06-22 13:44:40 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/5" for ::1 at 2020-06-22 13:44:44 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:44:48 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/songs/5" for ::1 at 2020-06-22 13:44:54 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/5/edit" for ::1 at 2020-06-22 13:44:58 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/songs/5" for ::1 at 2020-06-22 13:45:06 -0400
+Processing by SongsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d/WIIJfwNKe4CSS8aCBsdlYSxKYK30TfC1K7I/UBloRQiaHwYd/S12MmEj7m96hyMHpoL6t/eJmCL2QeAtBUvQ==", "song"=>{"title"=>"Please Pardon Yourself", "artist_name"=>"The Avett Brothers"}, "commit"=>"Update Song", "id"=>"5"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "The Avett Brothers"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Avett Brothers"], ["created_at", "2020-06-22 17:45:06.892285"], ["updated_at", "2020-06-22 17:45:06.892285"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = ?, "updated_at" = ? WHERE "songs"."id" = ?[0m  [["artist_id", 6], ["updated_at", "2020-06-22 17:45:06.894277"], ["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/songs/5
+Completed 302 Found in 12ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/songs/5" for ::1 at 2020-06-22 13:45:06 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered songs/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs" for ::1 at 2020-06-22 13:45:08 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 1.1ms)
+
+
